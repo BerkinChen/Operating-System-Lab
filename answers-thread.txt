@@ -1,0 +1,3 @@
+If there are two threads T1 and T2, when the two threads both execute the code of the get method, 
+and both threads have the same value of key%NBUCKET, when one thread executes the code of the insert before other 
+thread return, the data will be covered.
