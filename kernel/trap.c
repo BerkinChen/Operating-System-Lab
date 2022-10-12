@@ -67,6 +67,14 @@ usertrap(void)
     syscall();
   } else if((which_dev = devintr()) != 0){
     // ok
+  } else if(r_scause()==15 || r_scause()==13){//page fault
+    uint64 va = r_stval();
+    if(va >= p->sz)//判断地址是否合法
+      p->killed = 1;
+    if(cowpage(p->pagetable, va) == 0)//判断是否是cow
+      p->killed = 1;
+    if(cowalloc(p->pagetable, PGROUNDDOWN(va)) == 0)//cow的复制
+      p->killed = 1;
   } else {
     printf("usertrap(): unexpected scause %p pid=%d\n", r_scause(), p->pid);
     printf("            sepc=%p stval=%p\n", r_sepc(), r_stval());
