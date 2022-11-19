@@ -8,7 +8,7 @@ You can see every lab in different branch.
 - [x] Lab [**`traps`**](https://github.com/BerkinChen/Operating-System-Lab/tree/traps): Traps
 - [x] Lab [**`cow`**](https://github.com/BerkinChen/Operating-System-Lab/tree/cow): Copy-on-write fork
 - [x] Lab [**`thread`**](https://github.com/BerkinChen/Operating-System-Lab/tree/thread): Multithreading
-- [x] Lab **`lock`**: Parallelism/locking
-- [x] Lab **`fs`**: File system
+- [x] Lab [**`lock`**](https://github.com/BerkinChen/Operating-System-Lab/tree/lock): Parallelism/locking
+- [x] Lab [**`fs`**](https://github.com/BerkinChen/Operating-System-Lab/tree/fs): File system
 - [ ] Lab **`mmap`**: Mmap 
 - [ ] Lab **`net`**: Network stack
