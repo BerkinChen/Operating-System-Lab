@@ -10,5 +10,5 @@ You can see every lab in different branch.
 - [x] Lab [**`thread`**](https://github.com/BerkinChen/Operating-System-Lab/tree/thread): Multithreading
 - [x] Lab [**`lock`**](https://github.com/BerkinChen/Operating-System-Lab/tree/lock): Parallelism/locking
 - [x] Lab [**`fs`**](https://github.com/BerkinChen/Operating-System-Lab/tree/fs): File system
-- [ ] Lab **`mmap`**: Mmap 
+- [x] Lab [**`mmap`**](https://github.com/BerkinChen/Operating-System-Lab/tree/mmap): Mmap 
 - [ ] Lab **`net`**: Network stack
